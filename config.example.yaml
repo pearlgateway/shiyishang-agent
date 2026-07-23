@@ -1,0 +1,20 @@
+provider: relay
+model: ${model}
+api_key: ${key}
+base_url: ${endpoint}
+workspace: .
+strict_notp: false
+rp_enabled: true
+max_context_tokens: 128000
+request_timeout: 60
+max_tool_rounds: 12
+show_tool_io: true
+max_tool_output_chars: 12000
+
+profiles:
+  deepseek:
+    provider: deepseek
+    model: deepseek-chat
+  kimi:
+    provider: kimi
+    model: kimi-k2

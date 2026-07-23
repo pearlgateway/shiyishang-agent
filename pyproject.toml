@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shiyishang-agent"
+version = "0.1.0"
+description = "A role-play CLI agent with real tools and a Bin-inspired persona"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "shiyishang-agent contributors"}]
+dependencies = ["PyYAML>=6.0"]
+
+[project.scripts]
+shiyishang = "shiyishang_agent.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["shiyishang_agent*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

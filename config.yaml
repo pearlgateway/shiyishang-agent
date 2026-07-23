@@ -1,0 +1,12 @@
+provider: relay
+model: ${model}
+api_key: ${key}
+base_url: ${endpoint}
+workspace: .
+strict_notp: false
+rp_enabled: true
+max_context_tokens: 128000
+request_timeout: 120
+max_tool_rounds: 12
+show_tool_io: true
+max_tool_output_chars: 12000
